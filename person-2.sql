@@ -1,9 +1,10 @@
 create table person (
-	first_name VARCHAR(50),
-	last_name VARCHAR(50),
+	id BIGSERIAL NOT NULL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
 	email VARCHAR(50),
-	gender VARCHAR(50),
-	date_of_birth DATE,
+	gender VARCHAR(50) NOT NULL,
+	date_of_birth DATE NOT NULL,
 	country_of_birth VARCHAR(50)
 );
 insert into person (first_name, last_name, email, gender, date_of_birth, country_of_birth) values ('Shoshanna', 'Connaughton', 'sconnaughton0@discuz.net', 'Female', '2023-05-02', 'China');
